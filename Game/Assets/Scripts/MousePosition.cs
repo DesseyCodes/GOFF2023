@@ -22,4 +22,10 @@ public class MousePosition : MonoBehaviour
         //_worldPos = Camera.main.ScreenToWorldPoint(_mousePos);
         transform.position = _mousePos;
     }
+
+    // We'll use this method just for easliy getting the mouse's position in the world space, rather than being repetitive
+    public Vector3 GetMousePosition()
+    {
+        return _mousePos;
+    }
 }
