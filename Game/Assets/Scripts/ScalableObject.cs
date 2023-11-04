@@ -5,28 +5,48 @@ using UnityEngine;
 
 public class ScalableObject : MonoBehaviour
 {
-    public void Start()
+    private Controls controls;
+    private void Awake()
     {
-        GetComponent<SpriteRenderer>().color = Color.white;
+        controls = new Controls();
+        controls.Mouse.Enable();
+
+        controls.Mouse.Hover.performed += (UnityEngine.InputSystem.InputAction.CallbackContext context) =>
+        {
+            CheckIsHoverInThis(context.ReadValue<Vector2>());
+        };
+
+        controls.Mouse.Select.performed += (UnityEngine.InputSystem.InputAction.CallbackContext context) =>
+        {
+            
+        };
+
+        controls.Mouse.Deselect.performed += (UnityEngine.InputSystem.InputAction.CallbackContext context) =>
+        {
+            
+        };
+
+        controls.Mouse.EnlargeObject.performed += (UnityEngine.InputSystem.InputAction.CallbackContext context) =>
+        {
+            
+        };
+
+        controls.Mouse.ShrinkObject.performed += (UnityEngine.InputSystem.InputAction.CallbackContext context) =>
+        {
+            
+        };
     }
 
-    public void MouseEntered()
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        GetComponent<SpriteRenderer>().color = Color.green;
+        //if (controls.Mouse.ShrinkObject.WasPerformedThisFrame)
+        //{
+
+        //}
     }
 
-    public void MouseExited()
+    private void CheckIsHoverInThis(Vector2 hoverPosition)
     {
-        GetComponent<SpriteRenderer>().color = Color.white;
-    }
-
-    public void Resize(float value)
-    {
-        Vector3 oldPosition = transform.position;
-        value /= 1800; //divisor open to adjustment. Resizing should feel smooth but not take long
-        Vector3 sizeChange = new Vector3(value, value, 0);
-        transform.localScale += sizeChange;
         
-        transform.Translate(transform.position-oldPosition); //TODO: set position so that object does not fall or get pushed out of wall after resizing
     }
 }
