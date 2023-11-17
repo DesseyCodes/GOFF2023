@@ -64,9 +64,18 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""StopMoving"",
+                    ""name"": ""StopMoveVertical"",
                     ""type"": ""Button"",
                     ""id"": ""b01cd770-ea8b-478b-b9c8-a3107fd4689c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press(behavior=1)"",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""StopMoveHorizontal"",
+                    ""type"": ""Button"",
+                    ""id"": ""db5e28f6-1114-44ce-a559-dc2ab71575d6"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": ""Press(behavior=1)"",
@@ -125,29 +134,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""StopMoving"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""298b07ee-7a19-4d1c-a48b-7ab4d4a22635"",
-                    ""path"": ""<Keyboard>/a"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""StopMoving"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""9ccfa06a-95cb-4e17-8c10-7e02e2fa94c8"",
-                    ""path"": ""<Keyboard>/d"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""StopMoving"",
+                    ""action"": ""StopMoveVertical"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -158,18 +145,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""StopMoving"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""13a0d810-01aa-45ee-adf2-5bf9bf174853"",
-                    ""path"": ""<Keyboard>/leftArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""StopMoving"",
+                    ""action"": ""StopMoveVertical"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -180,18 +156,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""StopMoving"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""a18e412f-6442-42ea-80af-0fcf33f1c999"",
-                    ""path"": ""<Keyboard>/rightArrow"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""StopMoving"",
+                    ""action"": ""StopMoveVertical"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -202,7 +167,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""StopMoving"",
+                    ""action"": ""StopMoveVertical"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -247,6 +212,50 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""MoveDown"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""aaf16dd2-bf7a-46bf-a810-52d9a7005e70"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""StopMoveHorizontal"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d6d22c9c-9934-4cf3-ae22-18d7e70f8a10"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""StopMoveHorizontal"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d95677d5-a751-4f1e-ae04-22eb1045a1ec"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""StopMoveHorizontal"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4bc0d728-fce1-463f-8aaf-f7836c2e17c1"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""StopMoveHorizontal"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -375,7 +384,8 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         m_Keyboard_MoveLeft = m_Keyboard.FindAction("MoveLeft", throwIfNotFound: true);
         m_Keyboard_MoveUp = m_Keyboard.FindAction("MoveUp", throwIfNotFound: true);
         m_Keyboard_MoveDown = m_Keyboard.FindAction("MoveDown", throwIfNotFound: true);
-        m_Keyboard_StopMoving = m_Keyboard.FindAction("StopMoving", throwIfNotFound: true);
+        m_Keyboard_StopMoveVertical = m_Keyboard.FindAction("StopMoveVertical", throwIfNotFound: true);
+        m_Keyboard_StopMoveHorizontal = m_Keyboard.FindAction("StopMoveHorizontal", throwIfNotFound: true);
         // Mouse
         m_Mouse = asset.FindActionMap("Mouse", throwIfNotFound: true);
         m_Mouse_Select = m_Mouse.FindAction("Select", throwIfNotFound: true);
@@ -448,7 +458,8 @@ public partial class @Controls: IInputActionCollection2, IDisposable
     private readonly InputAction m_Keyboard_MoveLeft;
     private readonly InputAction m_Keyboard_MoveUp;
     private readonly InputAction m_Keyboard_MoveDown;
-    private readonly InputAction m_Keyboard_StopMoving;
+    private readonly InputAction m_Keyboard_StopMoveVertical;
+    private readonly InputAction m_Keyboard_StopMoveHorizontal;
     public struct KeyboardActions
     {
         private @Controls m_Wrapper;
@@ -457,7 +468,8 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         public InputAction @MoveLeft => m_Wrapper.m_Keyboard_MoveLeft;
         public InputAction @MoveUp => m_Wrapper.m_Keyboard_MoveUp;
         public InputAction @MoveDown => m_Wrapper.m_Keyboard_MoveDown;
-        public InputAction @StopMoving => m_Wrapper.m_Keyboard_StopMoving;
+        public InputAction @StopMoveVertical => m_Wrapper.m_Keyboard_StopMoveVertical;
+        public InputAction @StopMoveHorizontal => m_Wrapper.m_Keyboard_StopMoveHorizontal;
         public InputActionMap Get() { return m_Wrapper.m_Keyboard; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -479,9 +491,12 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @MoveDown.started += instance.OnMoveDown;
             @MoveDown.performed += instance.OnMoveDown;
             @MoveDown.canceled += instance.OnMoveDown;
-            @StopMoving.started += instance.OnStopMoving;
-            @StopMoving.performed += instance.OnStopMoving;
-            @StopMoving.canceled += instance.OnStopMoving;
+            @StopMoveVertical.started += instance.OnStopMoveVertical;
+            @StopMoveVertical.performed += instance.OnStopMoveVertical;
+            @StopMoveVertical.canceled += instance.OnStopMoveVertical;
+            @StopMoveHorizontal.started += instance.OnStopMoveHorizontal;
+            @StopMoveHorizontal.performed += instance.OnStopMoveHorizontal;
+            @StopMoveHorizontal.canceled += instance.OnStopMoveHorizontal;
         }
 
         private void UnregisterCallbacks(IKeyboardActions instance)
@@ -498,9 +513,12 @@ public partial class @Controls: IInputActionCollection2, IDisposable
             @MoveDown.started -= instance.OnMoveDown;
             @MoveDown.performed -= instance.OnMoveDown;
             @MoveDown.canceled -= instance.OnMoveDown;
-            @StopMoving.started -= instance.OnStopMoving;
-            @StopMoving.performed -= instance.OnStopMoving;
-            @StopMoving.canceled -= instance.OnStopMoving;
+            @StopMoveVertical.started -= instance.OnStopMoveVertical;
+            @StopMoveVertical.performed -= instance.OnStopMoveVertical;
+            @StopMoveVertical.canceled -= instance.OnStopMoveVertical;
+            @StopMoveHorizontal.started -= instance.OnStopMoveHorizontal;
+            @StopMoveHorizontal.performed -= instance.OnStopMoveHorizontal;
+            @StopMoveHorizontal.canceled -= instance.OnStopMoveHorizontal;
         }
 
         public void RemoveCallbacks(IKeyboardActions instance)
@@ -611,7 +629,8 @@ public partial class @Controls: IInputActionCollection2, IDisposable
         void OnMoveLeft(InputAction.CallbackContext context);
         void OnMoveUp(InputAction.CallbackContext context);
         void OnMoveDown(InputAction.CallbackContext context);
-        void OnStopMoving(InputAction.CallbackContext context);
+        void OnStopMoveVertical(InputAction.CallbackContext context);
+        void OnStopMoveHorizontal(InputAction.CallbackContext context);
     }
     public interface IMouseActions
     {

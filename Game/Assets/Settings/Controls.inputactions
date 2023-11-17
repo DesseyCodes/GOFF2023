@@ -42,9 +42,18 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "StopMoving",
+                    "name": "StopMoveVertical",
                     "type": "Button",
                     "id": "b01cd770-ea8b-478b-b9c8-a3107fd4689c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press(behavior=1)",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "StopMoveHorizontal",
+                    "type": "Button",
+                    "id": "db5e28f6-1114-44ce-a559-dc2ab71575d6",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "Press(behavior=1)",
@@ -103,29 +112,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "StopMoving",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "298b07ee-7a19-4d1c-a48b-7ab4d4a22635",
-                    "path": "<Keyboard>/a",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "StopMoving",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "9ccfa06a-95cb-4e17-8c10-7e02e2fa94c8",
-                    "path": "<Keyboard>/d",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "StopMoving",
+                    "action": "StopMoveVertical",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -136,18 +123,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "StopMoving",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "13a0d810-01aa-45ee-adf2-5bf9bf174853",
-                    "path": "<Keyboard>/leftArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "StopMoving",
+                    "action": "StopMoveVertical",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -158,18 +134,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "StopMoving",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "a18e412f-6442-42ea-80af-0fcf33f1c999",
-                    "path": "<Keyboard>/rightArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "StopMoving",
+                    "action": "StopMoveVertical",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -180,7 +145,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "StopMoving",
+                    "action": "StopMoveVertical",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -225,6 +190,50 @@
                     "processors": "",
                     "groups": "",
                     "action": "MoveDown",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "aaf16dd2-bf7a-46bf-a810-52d9a7005e70",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "StopMoveHorizontal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d6d22c9c-9934-4cf3-ae22-18d7e70f8a10",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "StopMoveHorizontal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d95677d5-a751-4f1e-ae04-22eb1045a1ec",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "StopMoveHorizontal",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4bc0d728-fce1-463f-8aaf-f7836c2e17c1",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "StopMoveHorizontal",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
